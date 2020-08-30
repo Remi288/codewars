@@ -4,3 +4,6 @@
 
 ## The supermarket Queue
 [codewar link](https://www.codewars.com/kata/57b06f90e298a7b53d000a86/train/python)
+
+## Two_sum
+[codewar link](https://www.codewars.com/kata/52c31f8e6605bcc646000082/train/python)
