@@ -1,25 +1,33 @@
 def increment_string(strng):
-    #if string is just characters adds 1
-    if strng.isalpha() == True:
-        s_string = strng.split()
-        print(s_string)
-        s_string.append('1')
-        char_string = "".join(s_string)
-        return(char_string)
-    #checks if string is just '' and returns 1
-    elif strng == '':
-        return '1'
-    #checks if string contains digits and adds 1 number
-    #NEED HELP
+    if not strng:
+        return "1"
+    lastchar = strng[-1]
+    if lastchar.isalpha():
+        return strng + '1'
     else:
-        # final_string = []
-        num_string = []
-        n_string = list(strng)
-        for i in n_string:
-            if i.isdigit() == True:
-                new_num = int(i) + 1
-                newnumstr = str(new_num)
-                num_string.append(newnumstr)
+        num = ''
+        for i in strng[::-1]:
+            if i.isnumeric():
+                num = num + i
+                print(num)
+            else:
+                break
+        reverse_num = num[::-1]
+        reverse_num_int = int(reverse_num) + 1
+        reverse_num_int_str = str(reverse_num_int)
+        # length_strng = len(strng)
+        length_reverse = len(reverse_num_int_str)
+        length_num = len(reverse_num)
+        newstr = strng[:-length_num]
 
-# I will stud regular expression and get back to this 
-print((increment_string("foo")))
+        if length_num > length_reverse:
+            diff = length_num - length_reverse
+            leading_zero = ('0' * diff) + reverse_num_int_str
+            return newstr + leading_zero
+        return newstr + str(reverse_num_int)
+        
+
+
+                
+
+print((increment_string("foo001")))

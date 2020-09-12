@@ -32,5 +32,15 @@
 [codewar link](https://www.codewars.com/kata/514b92a657cdc65150000006/train/python)
 
 
-## Camel Casw
+## Camel Case
 [codewar link](https://www.codewars.com/kata/5208f99aee097e6552000148/train/python)
+
+## Isogram
+[codewar link](https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/python)
+
+
+## Swap Case Using N
+[codewar link](https://www.codewars.com/kata/5f3afc40b24f090028233490/train/python)
+
+## Single palidrome character
+[codewar link](https://www.codewars.com/kata/5a2c22271f7f709eaa0005d3/train/javascript)
